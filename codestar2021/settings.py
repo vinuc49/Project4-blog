@@ -32,7 +32,8 @@ SECRET_KEY = os.environ.get('Vinuc@123')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["blogvinu.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = [
+    "blogvinu-0cc263a1584e.herokuapp.com", "localhost"]
 
 
 # Application definition
