@@ -9,11 +9,10 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
-from pathlib import Path
 import os
-import dj_database_url
+from pathlib import Path
 
+import dj_database_url
 if os.path.isfile("env.py"):
     import env
 
@@ -33,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "codestar2021.herokuapp.com", "localhost"]
+    "codestar2021.herokuapp.com", "https://8000-vinuc49-project4-blog-9midy90ro5.us2.codeanyapp.com/"]
 
 
 # Application definition
@@ -92,7 +91,7 @@ WSGI_APPLICATION = 'codestar2021.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("postgres://tpjvwwgl:KfTHF1AgxHZSvQuovrZHeWrLBOqkkoc7@trumpet.db.elephantsql.com/tpjvwwgl"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 
