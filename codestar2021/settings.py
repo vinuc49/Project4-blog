@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('Vinuc@123')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "blogvinu-0cc263a1584e.herokuapp.com", "localhost"]
+    "blogvinu.herokuapp.com", "localhost"]
 
 
 # Application definition
